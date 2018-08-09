@@ -18,7 +18,7 @@ This client was written according to the following reference documentation: [htt
     }
 ```
 
-#configuration
+# configuration
 1. Implement `GdaxMessageHandler<T>` interface for handling message:
 ```java
 public class HeartbeatMessageHandler implements GdaxMessageHandler<Heartbeat> {
@@ -57,7 +57,7 @@ gdax-websocket-client:
     passphrase: ""
 ```
 
-#usage
+# usage
 @Autowire GdaxWebsocketClient & subscribe to one or many channels [channels documentation](https://docs.pro.coinbase.com/#channels):
 
 Supported channels can be found in ChannelName.java
@@ -68,6 +68,6 @@ gdaxWebsocketClient.subscribe(new Subscription()
 );
 ```
 
-#errors
+# errors
 There is a default GdaxErrorMessageHandler registered for handling error messages from api. It just prints error level log if such message arrives. Can be overriden by custom message handler for type `ErrorMessage`.
 
