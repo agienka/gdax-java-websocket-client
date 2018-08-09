@@ -2,12 +2,12 @@
 Simple client allowing to subscribe, authenticate, listen & consume Coinbase/Gdax websocket api.
 This client was written according to the following reference documentation: [https://docs.pro.coinbase.com/#websocket-feed](https://docs.pro.coinbase.com/#websocket-feed)
 
-# features
+## features
  * designed for spring-boot application in tomcat container
  * with autoconfiguration enabled (@EnableAutoConfiguration), GdaxWebsocketClient bean is available without additional config
  * supports all (documented) messages available (as of 08-2018) in the Coinbase/Gdax websocket feed
  
-# installation
+## installation
 1. `git clone https://github.com/miss-d/gdax-java-websocket-client.git`
 2. `cd ./gdax-java-websocket-client`
 3. ./gradlew build
@@ -18,7 +18,7 @@ This client was written according to the following reference documentation: [htt
     }
 ```
 
-# configuration
+## configuration
 1. Implement `GdaxMessageHandler<T>` interface for handling message:
 ```java
 public class HeartbeatMessageHandler implements GdaxMessageHandler<Heartbeat> {
@@ -57,7 +57,7 @@ gdax-websocket-client:
     passphrase: ""
 ```
 
-# usage
+## usage
 @Autowire GdaxWebsocketClient & subscribe to one or many channels [channels documentation](https://docs.pro.coinbase.com/#channels):
 
 Supported channels can be found in ChannelName.java
@@ -68,6 +68,6 @@ gdaxWebsocketClient.subscribe(new Subscription()
 );
 ```
 
-# errors
+## errors
 There is a default GdaxErrorMessageHandler registered for handling error messages from api. It just prints error level log if such message arrives. Can be overriden by custom message handler for type `ErrorMessage`.
 
