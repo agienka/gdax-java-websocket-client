@@ -1,0 +1,41 @@
+package com.missd.gdaxjavawebsocketclient;
+
+public abstract class MessageAsMapKeys {
+    public static final String TYPE = "type";
+    public static final String TRADE_ID = "trade_id";
+    public static final String PRODUCT_ID = "product_id";
+    public static final String LAST_TRADE_ID = "last_trade_id";
+    public static final String SEQUENCE = "sequence";
+    public static final String TIME = "time";
+    public static final String TIMESTAMP = "timestamp";
+    public static final String CHANNELS = "channels";
+    public static final String PRICE = "price";
+    public static final String OPEN_24_H = "open_24h";
+    public static final String VOLUME_24_H = "volume_24h";
+    public static final String LOW_24_H = "low_24h";
+    public static final String HIGH_24_H = "high_24h";
+    public static final String VOLUME_30_D = "volume_30d";
+    public static final String BEST_BID = "best_bid";
+    public static final String BEST_ASK = "best_ask";
+    public static final String CHANGES = "changes";
+    public static final String MESSAGE = "message";
+    public static final String ORDER_ID = "order_id";
+    public static final String SIDE = "side";
+    public static final String ORDER_TYPE = "order_type";
+    public static final String SIZE = "size";
+    public static final String MAKER_ORDER_ID = "maker_order_id";
+    public static final String TAKER_ORDER_ID = "taker_order_id";
+    public static final String REMAINING_SIZE = "remaining_size";
+    public static final String REASON = "reason";
+    public static final String NEW_SIZE = "new_size";
+    public static final String OLD_SIZE = "old_size";
+    public static final String NEW_FUNDS = "new_funds";
+    public static final String OLD_FUNDS = "old_funds";
+    public static final String USER_ID = "user_id";
+    public static final String PROFILE_ID = "profile_id";
+    public static final String STOP_TYPE = "stop_type";
+    public static final String STOP_PRICE = "stop_price";
+    public static final String FUNDS = "funds";
+    public static final String TAKER_FEE_RATE = "taker_fee_rate";
+    public static final String PRIVATE = "private";
+}
