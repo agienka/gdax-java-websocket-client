@@ -11,15 +11,14 @@ repositories {
     mavenCentral()
 }
 
-def springBootVersion = '2.0.4.RELEASE'
-def springVersion = '5.0.7.RELEASE'
+ext {
+    springBootVersion = '2.0.4.RELEASE'
+}
 
 dependencies {
-    implementation 'org.apache.commons:commons-lang3:3.7'
-    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.1")
-    implementation "org.springframework:spring-websocket:$springVersion"
-    implementation "org.springframework.boot:spring-boot-starter-tomcat:$springBootVersion"
-    implementation "org.springframework.boot:spring-boot-starter:$springBootVersion"
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.7'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version:springBootVersion
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-websocket', version: springBootVersion
 
     testImplementation group: 'org.mockito', name: 'mockito-core', version: '2.21.0'
     testImplementation group: 'junit', name: 'junit', version: '4.12'
