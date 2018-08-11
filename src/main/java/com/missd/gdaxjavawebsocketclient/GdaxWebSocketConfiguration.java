@@ -15,7 +15,7 @@ import java.util.List;
 
 @Configuration
 @ConfigurationProperties(prefix = "gdax-websocket-client")
-@ConditionalOnProperty("gdax.enabled")
+@ConditionalOnProperty("gdax-websocket-client.enabled")
 public class GdaxWebSocketConfiguration {
 
     private String wsUrl;
